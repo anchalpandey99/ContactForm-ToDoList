@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>✅ My Todo App</h1>
+
+    <!-- Add Todo -->
+    <section class="controls">
+      <div class="add-row">
+        <input id="todoInput" placeholder="Add new todo..." autocomplete="off">
+        <button id="addTodoBtn">Add</button>
+      </div>
+
+      <!-- Search -->
+      <div class="search-row">
+        <input id="searchInput" placeholder="Search todos..." autocomplete="off">
+      </div>
+
+      <!-- Filters -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+    </section>
+
+    <!-- Counter -->
+    <div id="counter" class="counter">Todos: 0 | Completed: 0</div>
+
+    <!-- Todo List -->
+    <ul id="todoList" class="todo-list"></ul>
+
+    <p id="emptyTodos" class="empty">No todos yet. Add one above!</p>
+    <p id="noResults" class="empty" hidden>No todos match your search.</p>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
